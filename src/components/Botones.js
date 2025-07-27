@@ -21,11 +21,11 @@ let urlModalActualV = "";//para saber si se trata del anuncio, y agregar boton.
 const colapsarBotonera  = true; //Si es false, funciona con normalidad. Si es True, colapsar con la nueva logica
 
 //Información del Cliente
-const telefonoWA = "+52";
-const telefonoMovil = "+524771234567";
-const correoGmail = "";
-const urlMaps = "";
-const urlCalendy = "";
+const telefonoWA = "+524771658536";
+const telefonoMovil = "+524777136308";
+const correoGmail = "eva.mendez@llompart.com.mx";
+const urlMaps = "https://maps.app.goo.gl/nDsRvs5n6bFnrjTM7";
+const urlCalendy = "https://llompart.com.mx/pages/regalos-corporativos";
 const url1 = "";
 const url2 = ""; 
 const url3 = "";
@@ -36,8 +36,8 @@ const url7 = ""
 const url8 = ""
 const url9 = "";
 const url10 = ""
-const mensajeWhats = encodeURIComponent("¡Hola! Me gustaría ordenar");
-const mensajeCompartir = encodeURIComponent("¡Mira!, tu que tenías ganas de maríscos.");
+const mensajeWhats = encodeURIComponent("¡Hola!");
+const mensajeCompartir = encodeURIComponent("Actual y genuino como tú...");
 const mensajeGmail = encodeURIComponent("¡Hola!");
 
 // Cargar imágenes sin que truene si no existen
@@ -174,7 +174,7 @@ const Botones = ({ onPlayPause, onRewind, onForward, onToggleMute, isMuted, isPl
 
   const compartir = async () => {
     const shareData = {
-      title: "Marísquería",
+      title: "Ventas - Llompart",
       text: decodeURIComponent(mensajeCompartir),
       url: window.location.href,
     };
@@ -277,8 +277,8 @@ const Botones = ({ onPlayPause, onRewind, onForward, onToggleMute, isMuted, isPl
 
 
           const defaults = {
-            V: { galeria1: "https://www.canva.com/design/DAGuNW-pptw/E-vNnN1Zx58bfuCf7sJ3bQ/view?embed" },
-            H: { galeria1: "https://www.canva.com/design/DAGuNU-Chh4/419xbNNE8A-16Rpq6xHr-A/view?embed" },
+            V: { galeria1: "https://www.canva.com/design/DAGtBcGCfzQ/_9MyCl-Hw6AvZGZZNbPqWg/view?embed" },
+            H: { galeria1: "https://www.canva.com/design/DAGtMARaWCA/VfL24UMgujsCedhvFP9ONw/view?embed" },
           };
 		  
 			const nuevasGalerias = {
@@ -455,8 +455,9 @@ return (
 	  {/* Reproductor */}
       <div className="reproductor">
         {iconGallery1 && <button onClick={() => abrirGaleria(1)}><img src={iconGallery1} alt="Galería 1" /></button>}
-        {iconurl1 && <button onClick={() => abrirURL1()}><img src={iconurl1} alt="URL 1" /></button>}
-        {iconMiWa && <button onClick={abrirMiWhatsApp}><img src={iconMiWa} alt="WhatsApp" /></button>}
+        {iconPDF2 && <button onClick={() => manejarClickPDF(2)}><img src={iconPDF2} alt="PDF 2" /></button>}
+        {iconPDF1 && <button onClick={() => manejarClickPDF(1)}><img src={iconPDF1} alt="PDF 1" /></button>}
+        {iconCalendy && <button onClick={abrirCalendy}><img src={iconCalendy} alt="Calendly" /></button>}
         {iconMute && iconVol && (
           <button onClick={onToggleMute}>
             <img src={isMuted ? iconMute : iconVol} alt="Silenciar/Sonar" />
@@ -566,7 +567,7 @@ return (
 
             {/*{iconCalendy && <button onClick={abrirCalendy}><img src={iconCalendy} alt="Calendly" /></button>}*/}
             {iconGmail && <button onClick={abrirGmail}><img src={iconGmail} alt="Gmail" /></button>}
-            {/*{iconWhats && <button onClick={abrirWhatsApp}><img src={iconWhats} alt="WhatsApp" /></button>}*/}
+            {iconWhats && <button onClick={abrirWhatsApp}><img src={iconWhats} alt="WhatsApp" /></button>}
             {iconPhone && <button onClick={llamar}><img src={iconPhone} alt="Teléfono" /></button>}
             {iconMaps && <button onClick={abrirMaps}><img src={iconMaps} alt="Ubicación" /></button>}
             {iconShare && <button onClick={compartir}><img src={iconShare} alt="Compartir" /></button>}

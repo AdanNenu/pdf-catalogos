@@ -1,6 +1,6 @@
 {
-  "short_name": "Mariscos",
-  "name": "Los Marineros",
+  "short_name": "Lic. Eva Méndez",
+  "name": "Lic. Eva Méndez - Ventas Llompart",
   "icons": [
     {
       "src": "favicon.ico",
@@ -16,11 +16,6 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
-    },
-	{
-      "src": "logo180.png",
-      "type": "image/png",
-      "sizes": "180x180"
     }
   ],
   "start_url": ".",

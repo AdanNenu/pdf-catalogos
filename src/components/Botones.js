@@ -21,21 +21,21 @@ let urlModalActualV = "";//para saber si se trata del anuncio, y agregar boton.
 const colapsarBotonera  = true; //Si es false, funciona con normalidad. Si es True, colapsar con la nueva logica
 
 //Información del Cliente
-const telefonoWA = "+524771658536";
-const telefonoMovil = "+524777136308";
-const correoGmail = "eva.mendez@llompart.com.mx";
+const telefonoWA = "+52477";
+const telefonoMovil = "+5247771234567";
+const correoGmail = "tucorreo@llompart.com.mx";
 const urlMaps = "https://maps.app.goo.gl/nDsRvs5n6bFnrjTM7";
 const urlCalendy = "https://llompart.com.mx/pages/regalos-corporativos";
 const url1 = "";
 const url2 = ""; 
 const url3 = "";
 const url4 = "";
-const url5 = ""
-const url6 = ""
-const url7 = ""
-const url8 = ""
+const url5 = "";
+const url6 = "";
+const url7 = "";
+const url8 = "";
 const url9 = "";
-const url10 = ""
+const url10 = "";
 const mensajeWhats = encodeURIComponent("¡Hola!");
 const mensajeCompartir = encodeURIComponent("Actual y genuino como tú...");
 const mensajeGmail = encodeURIComponent("¡Hola!");
@@ -277,8 +277,8 @@ const Botones = ({ onPlayPause, onRewind, onForward, onToggleMute, isMuted, isPl
 
 
           const defaults = {
-            V: { galeria1: "https://www.canva.com/design/DAGtBcGCfzQ/_9MyCl-Hw6AvZGZZNbPqWg/view?embed" },
-            H: { galeria1: "https://www.canva.com/design/DAGtMARaWCA/VfL24UMgujsCedhvFP9ONw/view?embed" },
+            V: { galeria1: "https://www.canva.com/design/DAGuZF-P5vs/SgUDAmX2B1XrM9MacfsY9Q/view?embed" },
+            H: { galeria1: "https://www.canva.com/design/DAGuZIAMnUo/BF2SjndVQZvFCRyc6YfLyA/view?embed" },
           };
 		  
 			const nuevasGalerias = {
@@ -571,11 +571,11 @@ return (
             {iconPhone && <button onClick={llamar}><img src={iconPhone} alt="Teléfono" /></button>}
             {iconMaps && <button onClick={abrirMaps}><img src={iconMaps} alt="Ubicación" /></button>}
             {iconShare && <button onClick={compartir}><img src={iconShare} alt="Compartir" /></button>}
-            {iconReport && <button onClick={abrirModalMiAnuncio}><img src={iconReport} alt="Anuncio" /></button>}
 
             {/* Mis datos de Empresa */}
             {/*{iconMiMail && <button onClick={abrirMiGmail}><img src={iconMiMail} alt="Gmail" /></button>}*/}
-            {/*{iconMiWa && <button onClick={abrirMiWhatsApp}><img src={iconMiWa} alt="WhatsApp" /></button>}*/}
+            {iconMiWa && <button onClick={abrirMiWhatsApp}><img src={iconMiWa} alt="WhatsApp" /></button>}
+            {iconReport && <button onClick={abrirModalMiAnuncio}><img src={iconReport} alt="Anuncio" /></button>}
           </motion.div>
         )}
       </AnimatePresence>
